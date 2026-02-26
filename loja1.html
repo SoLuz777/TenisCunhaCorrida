@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Tênis Carbon Marathon Chunta</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="icon" class="logo_top" href="imagem_shop-removebg-preview.png" type="image/png">
+
+<link rel="stylesheet" href="stly.css">
+
+  <!-- TikTok Pixel Code Start -->
+
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container bar">
+      <div class="row">
+        <span class="icon" aria-label="Voltar"><i class="fa-solid fa-chevron-left"></i></span>
+        <small style="color:var(--muted)">Loja › Áudio › Tênis Carbon Marathon</small>
+      </div>
+      <div class="row">
+        <span class="icon"><i class="fa-solid fa-share-nodes"></i></span>
+        <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>
+        <span class="icon"><i class="fa-solid fa-ellipsis"></i></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO + PREÇO (MOBILE-FIRST empilhado) -->
+  <section class="container" style="padding:12px 12px 0 12px">
+ 
+      <div class="grid-2">
+  <!-- Galeria com slider -->
+  <div class="card hero" id="galeria">
+    <img id="hero" alt="JBL PartyBox" />
+    <button class="arrow prev" aria-label="Imagem anterior">‹</button>
+<button class="arrow next" aria-label="Próxima imagem">›</button>
+    <div class="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+      <span class="dot" data-index="3"></span>
+      <span class="dot" data-index="4"></span>
+    </div>
+  </div>
+</div>
+
+      <!-- Preço -->
+      <aside class="card" style="overflow:hidden">
+        <div class="badge">
+          <h3>R$ 72,55 <i class="fa-solid fa-gift"></i></h3>
+          <small>De <s>R$ 289,90</s> • Economize 17% - OFF</small>
+          <div class="row" style="margin-top:8px">
+            <small style="background:rgba(255,255,255,.2);padding:4px 8px;border-radius:8px">TERMINA EM <b id="timer">50:55</b></small>
+            <i class="fa-solid fa-circle" style="font-size:8px;opacity:.85"></i>
+          </div>
+        </div>
+        <div class="price-card">
+         
+          <!-- CORREÇÃO: "Primo" para "Promo" -->
+          <h1 style="margin:0 0 6px 0;font:800 17px/1.2 system-ui">Promoção do Mês</h1>
+          <h2 style="margin:0 0 4px 0;font:700 16px/1.2 system-ui">Tênis Carbon Marathon Chunta</h2>
+          <h3 style="margin:0 0 4px 0;font:600 15px/1.2 system-ui;color:#6b7280"></h3>
+          <h3 style="margin:0 0 12px 0;font:600 15px/1.2 system-ui;color:#6b7280">Familía</h3>
+
+
+ <div class="divider"></div>
+ 
+<!-- Escolha a Cor -->
+<div class="color-section">
+  <label class="color-title">Cor</label>
+
+  <div class="color-options">
+
+    <div class="color-option active" data-color="Microcristalino Branco">
+      <img src="sg-11134201-81zts-mivqvfrnq22q09@resize_w450_nl.webp" alt="">
+      <span>Microcristalino Branco</span>
+    </div>
+
+    <div class="color-option" data-color="Fada Flor de Pêssego">
+      <img src="sg-11134201-81zus-mivqvv0skp380c@resize_w450_nl.webp" alt="">
+      <span>Fada Flor de Pêssego</span>
+    </div>
+
+    <div class="color-option" data-color="Verde não queimado">
+      <img src="sg-11134201-81zvu-mivquqffnn5u67@resize_w450_nl.webp" alt="">
+      <span>Verde não queimado</span>
+    </div>
+
+    <div class="color-option" data-color="Ryan Azul">
+      <img src="sg-11134201-81zwl-mivqvz0rs7iba7@resize_w450_nl.webp" alt="">
+      <span>Ryan Azul</span>
+    </div>
+
+    <div class="color-option" data-color="Rosa">
+  <img src="Sf5433a3d292d4943a2b29b330587991bJ_2000x.webp" alt="">
+  <span>Rosa</span>
+</div>
+
+
+  </div>
+</div>
+
+
+  <div class="divider"></div>
+
+
+
+ <div class="divider"></div>
+<div class="seletor-tamanho">
+  <h3 class="titulo-tamanho">Escolha o Tamanho</h3>
+
+  <div class="tamanhos">
+    <button type="button" class="tamanho-btn">37</button>
+    <button type="button" class="tamanho-btn">38</button>
+    <button type="button" class="tamanho-btn">39</button>
+    <button type="button" class="tamanho-btn">40</button>
+    <button type="button" class="tamanho-btn">41</button>
+    <button type="button" class="tamanho-btn">42</button>
+  </div>
+
+  <input type="hidden" id="tamanhoSelecionado" name="tamanho">
+</div>
+
+
+<script>
+(function(){
+  const container = document.querySelector('.seletor-tamanho');
+  const botoes = container.querySelectorAll('.tamanho-btn');
+  const inputHidden = container.querySelector('#tamanhoSelecionado');
+
+  botoes.forEach(botao => {
+    botao.addEventListener('click', function() {
+      botoes.forEach(btn => btn.classList.remove('ativo'));
+      this.classList.add('ativo');
+      inputHidden.value = this.textContent;
+    });
+  });
+})();
+</script>
+  <div class="divider"></div>
+
+
+          
+          <div class="row" style="color:#4b5563;font-weight:700">
+            <span class="rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </span>
+            <small><strong>4.7</strong> (207) • +14 mil vendidos</small>
+          </div>
+          
+          <div class="space"></div>
+          
+          <!-- <div>
+            <h4 style="margin:0 0 6px 0;font:700 15px system-ui">Monocristalino</h4>
+            <p style="margin:0 0 12px 0">5v/10v</p>
+          </div> -->
+          
+          <div class="chips">
+            <!-- <span class="chip"><i class="fa-solid fa-bolt"></i> 110v/220v</span> -->
+            <span class="chip"><i class="fa-solid fa-truck-fast"></i> Frete grátis</span>
+            <span class="chip"><i class="fa-solid fa-rotate-left"></i> Devolução até  15 dias</span>
+          </div>
+          <div class="space"></div>
+          <a class="btn btn-primary" href="https://pay.run-force.shop/pay/80229a67-bb9c-4841-8915-f69efa317944">COMPRAR AGORA</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- SELINHOS UM ABAIXO DO OUTRO -->
+  <section class="container">
+    <div class="trust-items">
+      <div class="trust-item">
+        <i class="fa-solid fa-truck-fast" style="color:#16a34a"></i>
+        <div>
+          <b>Frete grátis</b><br>
+          <small class="muted">Entrega expressa em todo Brasil. Receba seu produto em até 15 dias úteis com código de rastreamento completo.</small>
+        </div>
+      </div>
+      <div class="trust-item">
+        <i class="fa-solid fa-rotate-left" style="color:#f59e0b"></i>
+        <div>
+          <b>Devolução grátis até 15 dias</b><br>
+          <small class="muted">Não gostou? Devolvemos seu dinheiro sem burocracia. Frete de retorno gratuito e reembolso rápido garantido.</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+ <div class="divider"></div>
+
+  <section class="container prose">
+    <div class="row" style="gap:10px;margin-bottom:8px;justify-content:space-between">
+      <div class="row" style="gap:10px">
+        <img src="./5.webp" alt="" style="width:40px;height:40px;object-fit:contain"/>
+        <div>
+          <b> Tênis Carbon Marathon Chunta</b><br>
+          <small style="color:#9ca3af">1207 produtos</small>
+        </div>
+      </div>
+      <button class="follow-btn">Seguir</button>
+    </div>
+    <div class="card" style="padding:14px">
+      <h2>Descrição do produto</h2>
+      <h3>O tênis esportivo</h3>
+
+
+       <h3>Carbon Marathon oferece o ajuste perfeito para o seu tamanho normal, garantindo conforto e desempenho em cada passo. 
+        Com design moderno e tecnologia avançada, ele é ideal para quem busca um calçado leve, resistente e com excelente respirabilidade.</h3>
+
+
+        <h3>  • Características principais:</h3>
+        <h3>•Ajuste: Se ajusta perfeitamente ao tamanho normal do seu pé</h3>
+        <h3>• Material superior: Malha aérea de alta qualidade que proporciona excelente ventilação e conforto.</h3>
+        <h3>• Palmilha: Fabricada em EVA, oferecendo absorção de impacto e conforto durante o uso prolongado.</h3>
+        <h3>• Sola: Produzida em borracha (rubber), garantindo durabilidade e ótima aderência em diferentes superfícies. </h3>
+        <h3>• Fixação: Sistema de amarração com costura reforçada para maior segurança e estabilidade.</h3>
+         <h3> • Cobertura: Não ultrapassa o tornozelo, ideal para esportes e uso casual.</h3>
+          <h3>• Propriedades: Respirável, absorvente de suor, leve, resistente e com tecnologia anti-odor para manter os pés sempre frescos. </h3>
+          <h3>• P• Sexo: Unissex.</h3>
+          <h3>• Uso: Tênis casual e esportivo, perfeito para diversas atividades e corridas diárias.</h3>
+          <h3> Design: Modelo Arrojado e tecnológico.</h3>
+          <h3>MPRE PEDIR O TAMANHO QUE USA NO BRASIL</h3>
+
+          <h3>Frete Grátis com rastreio atualizado</h3>
+          
+      
+         
+
+       <!-- <h4>FABRICANTE: SHANTOU CHENGHAI QIZHI INTELLIGENT TECHNOLOGY CO.,</h4> -->
+
+      <p>ENVIO:   São Paulo</p>
+
+    
+    </div>
+  </section>
+
+   <div class="divider"></div>
+
+
+<section class="mobile-gallery">
+  <div class="divider"></div>
+  <h4 class="texto-imagem">
+    SEMPRE PEDIR O TAMANHO QUE USA NO BRASIL
+  </h4>
+<div class="divider"></div>
+  <div class="gallery-container">
+
+    <div class="gallery-item">
+      <img src="./tamanho_tenis.webp" alt="">
+    </div>
+    
+    <div class="gallery-item">
+      <img src="sg-11134201-81zts-mivqvfrnq22q09@resize_w450_nl.webp" alt="">
+    </div>
+
+    <div class="gallery-item">
+      <img src="sg-11134201-81zus-mivqvv0skp380c@resize_w450_nl.webp" alt="">
+    </div>
+
+    <div class="gallery-item">
+      <img src="sg-11134201-81zvu-mivquqffnn5u67@resize_w450_nl.webp" alt="">
+    </div>
+
+    <div class="gallery-item">
+      <img src="Sf5433a3d292d4943a2b29b330587991bJ_2000x.webp" alt="">
+    </div>
+
+  </div>
+</section>
+
+
+
+
+  <div class="divider"></div>
+
+  
+  <section class="container" id="reviews">
+    <div class="row" style="justify-content:space-between;margin-bottom:6px">
+      <h2 style="margin:0;font:800 18px system-ui">Avaliações dos clientes <span style="color:#6b7280;font-weight:600">(491)</span></h2>
+      <a href="#" style="font-weight:800;color:#2563eb;text-decoration:none">Ver todas</a>
+    </div>
+   
+    <article class="card review">
+      <div class="row" style="gap:12px">
+        <img class="avatar" src="Captura de tela 2026-02-25 002445.png" alt="Carla"/>
+        <div>
+          <b>Jose silva</b> <span class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <div style="color:#9ca3af;font-weight:700;font-size:12px">São Paulo, SP</div>
+        </div>
+      </div>
+      <p style="margin:8px 0 0 0;color:#374151">Minha esposa amou, presente pra  ela qualidade boa</p>
+      <div class="review-images">
+        <img class="review-image" src="./2.webp" alt="Feedback 1">
+      </div>
+    </article>
+    
+    <div class="space"></div>
+    
+    
+    <article class="card review">
+      <div class="row" style="gap:12px">
+        <img class="avatar" src="Captura de tela 2026-02-25 002327.png" alt="Beatriz"/>
+        <div>
+          <b>Beatriz Lima</b> <span class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+          <div style="color:#9ca3af;font-weight:700;font-size:12px">Rio de Janeiro, RJ</div>
+        </div>
+      </div>
+      <p style="margin:8px 0 0 0;color:#374151">Valeu muito a pena, achei otimo o custo</p>
+      <div class="review-images">
+        <img class="review-image" src="branco.webp" alt="Feedback 3">
+        <img class="review-image" src="2zaul.webp" alt="Feedback 3">
+      </div>
+    </article>
+
+    <div class="space"></div>
+    
+   
+    <article class="card review">
+      <div class="row" style="gap:12px">
+        <img class="avatar" src="Captura de tela 2026-02-25 002441.png" alt="Pedro"/>
+        <div>
+          <b>Pedro Raúl</b> <span class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span>
+          <div style="color:#9ca3af;font-weight:700;font-size:12px">Belo Horizonte, MG</div>
+        </div>
+      </div>
+      <p style="margin:8px 0 0 0;color:#374151">Comprei quarta-feira é chegou ontem não me arrependo, muito bom!</p>
+      <div class="review-images">
+         <img class="review-image" src="laranja.webp" alt="Feedback 9">
+          <img class="review-image" src="branco-laranja.webp" alt="Feedback 9">
+      </div>
+    </article>
+
+    <div class="space"></div>
+    
+   
+    <article class="card review">
+      <div class="row" style="gap:12px">
+        <img class="avatar" src="Captura de tela 2026-02-25 002334.png" alt="Pietra"/>
+        <div>
+          <b>Pietra Santos</b> <span class="rating"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+          <div style="color:#9ca3af;font-weight:700;font-size:12px">Salvador, BA</div>
+        </div>
+      </div>
+      <p style="margin:8px 0 0 0;color:#374151">Simplemente maravilhoso </p>
+      <div class="review-images">
+        <img class="review-image" src="./Af28b3dad571144059e027cf6ed40803dh.jpg_800x800.avif" alt="Feedback 9">
+         <img class="review-image" src="./A7e8cf30f5d1b410c9837baa1211ad4f8s.jpg_800x800.avif" alt="Feedback 9">
+      </div>
+    </article>
+  </section>
+
+  <div class="divider"></div>
+
+
+<div class="aviso-destaque">
+  <div class="texto">
+    <strong>Atenção:</strong> Caso tenha qualquer problema com seu pedido,
+    utilize nosso canal oficial de reclamações.
+  </div>
+
+  <a href="reclamação.html" class="btn-chamativo">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+        d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+    Reclamar
+  </a>
+</div>
+
+
+ </style>
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- ATENDIMENTO -->
+    <div class="footer-column">
+      <h3>ATENDIMENTO AO CLIENTE</h3>
+      <ul>
+        <li><a href="#">Central de Ajuda</a></li>
+        <li><a href="#">Como Comprar</a></li>
+        <li><a href="#">Métodos de Pagamento</a></li>
+        <li><a href="#">Garantia Shopee</a></li>
+        <li><a href="#">Devolução e Reembolso</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="#">Ouvidoria</a></li>
+        <li><a href="#">Preferências de cookies</a></li>
+      </ul>
+    </div>
+
+    <!-- SOBRE -->
+    <div class="footer-column">
+      <h3>SOBRE A SHOPEE</h3>
+      <ul>
+        <li><a href="#">Sobre Nós</a></li>
+        <li><a href="#">Políticas</a></li>
+        <li><a href="#">Política de Privacidade da Shopee</a></li>
+        <li><a href="#">Programa de Afiliados</a></li>
+        <li><a href="#">Seja um Motorista Parceiro</a></li>
+        <li><a href="#">Ofertas Relâmpago</a></li>
+        <li><a href="#">Shopee Blog</a></li>
+        <li><a href="#">Imprensa</a></li>
+      </ul>
+    </div>
+
+    <!-- PAGAMENTO -->
+    <div class="footer-column">
+      <h3>PAGAMENTO</h3>
+      <div class="payments">
+        <img src="visa.webp" alt="Visa">
+        <img src="master.webp" alt="Mastercard">
+        <img src="elo.webp" alt="Elo">
+        <img src="americaex.png" alt="American Express">
+        <img src="boleto.png" alt="Boleto">
+        <img src="p" alt="Pix">
+      </div>
+    </div>
+
+    <!-- REDES -->
+    <div class="footer-column">
+      <h3>SIGA-NOS</h3>
+      <ul>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">TikTok</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+
+  <!-- BOTÃO FIXO - CORRIGIDO PARA NÃO SAIR DA TELA -->
+  <nav class="dock">
+    <div class="dock-container">
+      <div class="dock-options">
+        <a href="#" class="dock-option">
+          <i class="fa-solid fa-store"></i>
+          <span>Loja</span>
+        </a>
+        <a href="#" class="dock-option">
+          <i class="fa-regular fa-comment"></i>
+          <span>Bater papo</span>
+        </a>
+        <a href="#reviews" class="dock-option active">
+          <i class="fa-regular fa-star"></i>
+          <span>Avaliações do produto</span>
+        </a>
+      </div>
+      <a id="comprar" class="btn btn-primary" href="https://pay.run-force.shop/pay/80229a67-bb9c-4841-8915-f69efa317944">COMPRAR AGORA</a>
+    </div>
+  </nav>
+
+
+<script>
+// 
+
+  // ================= GALERIA  IMAGEM E TROCA DE COR=================
+ (function () {
+
+  // ===== IMAGENS POR COR =====
+  const imagesByColor = {
+    "Microcristalino Branco": [
+      'sg-11134201-81zts-mivqvfrnq22q09@resize_w450_nl.webp',
+       'sg-11134201-81zus-mivqvv0skp380c@resize_w450_nl.webp',
+       'sg-11134201-81zvu-mivquqffnn5u67@resize_w450_nl.webp',
+       'sg-11134201-81zwl-mivqvz0rs7iba7@resize_w450_nl.webp',
+       'Sf5433a3d292d4943a2b29b330587991bJ_2000x.webp'
+    ],
+    "Fada Flor de Pêssego": [
+      'sg-11134201-81zus-mivqvv0skp380c@resize_w450_nl.webp'
+    ],
+    "Verde não queimado": [
+      'sg-11134201-81zvu-mivquqffnn5u67@resize_w450_nl.webp'
+    ],
+    "Ryan Azul": [
+      'sg-11134201-81zwl-mivqvz0rs7iba7@resize_w450_nl.webp'
+    ],
+    "Rosa": [
+      'Sf5433a3d292d4943a2b29b330587991bJ_2000x.webp'
+    ]
+  };
+
+  const hero = document.getElementById('hero');
+  const prevBtn = document.querySelector('.arrow.prev');
+  const nextBtn = document.querySelector('.arrow.next');
+  const colorOptions = document.querySelectorAll('.color-option');
+
+  let imgs = [];
+  let index = 0;
+
+  function show() {
+    hero.src = imgs[index];
+  }
+
+  function next() {
+    if (index < imgs.length - 1) {
+      index++;
+      show();
+    }
+  }
+
+  function prev() {
+    if (index > 0) {
+      index--;
+      show();
+    }
+  }
+
+  function setColor(color) {
+    imgs = imagesByColor[color];
+    index = 0;
+    show();
+  }
+
+  // eventos
+  nextBtn.addEventListener('click', next);
+  prevBtn.addEventListener('click', prev);
+
+  colorOptions.forEach(option => {
+    option.addEventListener('click', () => {
+      colorOptions.forEach(o => o.classList.remove('active'));
+      option.classList.add('active');
+      setColor(option.dataset.color);
+    });
+  });
+
+  // inicial
+  const firstColor = document.querySelector('.color-option.active')?.dataset.color;
+  setColor(firstColor || Object.keys(imagesByColor)[0]);
+
+})();
+  </script>
+</body>
+</html>
